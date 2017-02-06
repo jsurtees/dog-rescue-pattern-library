@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #4F4D4E;
+  --color-orange: #F9A43E;
+  --color-red: #F27077;
+
+  --font-primary: "Dosis", 300, Arial, sans-serif;
+  --font-secondary: "Amatic", 700, serif;
+}
+
+html{
+  font-family: var(--font-primary);
+}
