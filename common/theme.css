@@ -1,13 +1,13 @@
 :root {
-  --color-primary: #4F4D4E;
-  --color-orange: #F9A43E;
-  --color-red: #F27077;
+  --color-primary: #4f4d4e;
+  --color-orange: #f9a43e;
+  --color-red: #f27077;
 
   --font-primary: "Amatica SC", serif;
   --font-secondary: "Dosis", sans-serif;
 }
 
-html{
+html {
   font-family: var(--font-secondary);
   color: #fff;
 }
@@ -65,5 +65,5 @@ a {
 }
 
 body {
-  background-color: #4F4D4E;
+  background-color: #4f4d4e;
 }
