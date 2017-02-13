@@ -3,10 +3,67 @@
   --color-orange: #F9A43E;
   --color-red: #F27077;
 
-  --font-primary: "Dosis", 300, Arial, sans-serif;
-  --font-secondary: "Amatic", 700, serif;
+  --font-primary: "Amatica SC", serif;
+  --font-secondary: "Dosis", sans-serif;
 }
 
 html{
+  font-family: var(--font-secondary);
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary);
+  color: var(--color-red);
+}
+
+ul, ol, dl {
+  font-family: var(--font-secondary);
+  list-style-type: none;
+}
+
+dt {
+  font-weight: bold;
+}
+
+blockquote {
+  font-family: var(--font-primary);
+}
+
+cite {
+  font-family: var(--font-secondary);
+  font-style: normal;
+}
+
+q {
+  font-weight: bold;
+}
+
+em {
+  font-family: var(--font-primary);
+  font-style: normal;
+}
+
+del {
+  color: grey;
+}
+
+ins {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+abbr {
+  font-family: var(--font-secondary);
+  font-weight: bold;
+}
+
+a {
+  color: var(--color-red);
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  background-color: #4F4D4E;
 }
