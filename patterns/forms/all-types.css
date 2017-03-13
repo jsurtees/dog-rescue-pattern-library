@@ -1,0 +1,54 @@
+input, select, textarea {
+  border: 2px solid var(--color-orange);
+  color: var(--color-primary);
+}
+
+.label, .check {
+  font-family: var(--font-primary);
+  color: var(--color-red);
+  text-shadow: black 0 .5px 3px;
+}
+
+.error-top {
+  border: 3px solid var(--color-orange);
+  box-shadow: 0 0 6px #222;
+}
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before {
+  border-color: var(--color-red);
+}
+
+.error-message {
+  display: none;
+  color: var(--color-red);
+}
+
+.is-validated .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message {
+  display: block;
+}
+
+.label {
+  transition: all .5s ease-out;
+}
+
+.label:hover {
+  transform: translate(2%);
+}
+
+input[type="radio"] + label::before {
+  width: 1.5em;
+  height: 1.5em;
+  border-color: var(--color-orange);
+}
+
+.button-label {
+  padding-right: 2em;
+}
+
+.is-validated input:invalid,
+.is-validated input[type="radio"]:invalid + label::before {
+  border-color: var(--color-red);
+}

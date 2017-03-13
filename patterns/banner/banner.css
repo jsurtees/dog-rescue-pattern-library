@@ -1,0 +1,68 @@
+html {
+  overflow-x: hidden;
+}
+
+.banner {
+  background-image: url("images/banner-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner-content {
+  padding-top: 38%;
+  padding-bottom: 13%;
+  color: #fff;
+}
+
+.i-256 {
+  max-height: 120px;
+}
+
+.content {
+  transform: translateX(-10%);
+  height: 5em;
+  width: 150%;
+  box-shadow: 0px -50px 170px #222;
+}
+
+.subhead {
+  font-family: var(--font-primary);
+}
+
+.up-arrow {
+  margin-left: 4em;
+  transform: translateY(-3em);
+  visibility: hidden;
+  animation: fade 3s ease-in-out infinite;
+}
+
+@media only screen and (min-width: 35em) {
+
+  .banner-content {
+    padding-top: 38%;
+    padding-bottom: 13%;
+    color: #fff;
+  }
+
+  .up-arrow {
+    visibility: visible;
+  }
+
+  @keyframes fade {
+
+    0% {
+      opacity: 0.2;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.2;
+    }
+  }
+
+}
