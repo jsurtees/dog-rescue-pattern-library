@@ -850,11 +850,19 @@
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
             <li><a href="#forms-all-types">All types</a></li>
+            <li><a href="#forms-date-input">Date input</a></li>
+            <li><a href="#forms-drop-down">Drop down</a></li>
+            <li><a href="#forms-large-text-box">Large text box</a></li>
+            <li><a href="#forms-radio-buttons">Radio buttons</a></li>
             <li><a href="#forms-small-text-input">Small text input</a></li>
         </ol>
       </nav>
   </div>
 
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>The only possible changes will occur when button lists are longer than usual. They will become block, rather than inline.</p>
+</div>
+    </div>
 
   
 
@@ -949,7 +957,218 @@
   &lt;/div>
 
   &lt;div class="pad-t-1-2">
-    &lt;a class="btn" type="submit" href="#">SUBMIT&lt;/a>
+    &lt;button class="btn" type="submit" href="#">SUBMIT&lt;/button>
+  &lt;/div>
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="forms-date-input">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Date input</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/forms/date-input.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>An input specifically used to enter the date.</p>
+</div>
+          </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/forms/date-input.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;form method="post" novalidate=""&gt;
+  &lt;div class="push">
+    &lt;label class="label exa push-1-2" for="date">Date&lt;/label>
+    &lt;input type="date" id="date" required aria-describedby="date-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="date-error">
+      &lt;span>Enter the date as yyyy-mm-dd&lt;/span>
+    &lt;/p>
+  &lt;/div>
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="forms-drop-down">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Drop down</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/forms/drop-down.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>Where the user can select one out of multiple options.</p>
+</div>
+          </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/forms/drop-down.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;form method="post" novalidate=""&gt;
+  &lt;div class="push">
+    &lt;label class="label exa push-1-2" for="dogs">Dog&lt;/label>
+    &lt;select id="dogs" name="dogs">
+      &lt;option class="error-message" value="">Choose a dog&lt;/option>
+      &lt;option>Feather&lt;/option>
+      &lt;option>Fennec&lt;/option>
+      &lt;option>Luna&lt;/option>
+      &lt;option>Donuts&lt;/option>
+      &lt;option>Chai&lt;/option>
+      &lt;option>Ella&lt;/option>
+      &lt;option>Uni&lt;/option>
+      &lt;option>Zuri&lt;/option>
+    &lt;/select>
+  &lt;/div>
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="forms-large-text-box">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Large text box</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/forms/large-text-box.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>This form field is for longer more complicated answers.</p>
+</div>
+          </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/forms/large-text-box.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;form method="post" novalidate=""&gt;
+  &lt;div class="push">
+    &lt;label class="label exa push-1-2" for="why-chosen">Why you chose this dog&lt;/label>
+    &lt;textarea id="why-chosen" name="why-chosen">&lt;/textarea>
+  &lt;/div>
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="forms-radio-buttons">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Radio buttons</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/forms/radio-buttons.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>A question that can only have one answer.</p>
+</div>
+          </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/forms/radio-buttons.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;form method="post" novalidate=""&gt;
+  &lt;div class="push">
+    &lt;label class="label exa push-1-2" for="own">Ownership&lt;/label>
+    &lt;input class="radio-button" type="radio" name="ownership" id="own" required aria-describedby="ownership-error">
+    &lt;label class="button-label push-1-2" for="own">Own&lt;/label>
+    &lt;input class="radio-button" type="radio" name="ownership" id="rent" required aria-describedby="ownership-error">
+    &lt;label class="button-label push-1-2" for="rent">Rent&lt;/label>
+    &lt;p class="error-message milli island-1-4 push-0" id="ownership-error">
+      &lt;span>Select one&lt;/span>
+    &lt;/p>
   &lt;/div>
 &lt;/form>
 </pre></code>
@@ -968,6 +1187,10 @@
               </a>
             </div>
         </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>This is the basic form field for short text inputs. This could include names, address, etc.</p>
+</div>
+          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
@@ -990,7 +1213,22 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>
+              <code><pre>&lt;form method="post" novalidate=""&gt;
+  &lt;div class="push">
+    &lt;label class="label exa push-1-2" for="name">Name&lt;/label>
+    &lt;input type="text" id="name" placeholder="First Last" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+      &lt;span>Enter your first and last name&lt;/span>
+    &lt;/p>
+  &lt;/div>
+  &lt;div class="push">
+    &lt;label class="label exa push-1-2" for="address">Address&lt;/label>
+    &lt;input type="text" id="address" required aria-describedby="address-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="address-error">
+      &lt;span>Enter your full address (Street, Number, City)&lt;/span>
+    &lt;/p>
+  &lt;/div>
+&lt;/form>
 </pre></code>
             </div>
           </div>
