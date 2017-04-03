@@ -8,6 +8,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .banner-content {
@@ -21,8 +22,8 @@ html {
 }
 
 .content {
-  transform: translateX(-10%);
-  height: 5em;
+  transform: translate(-10%, 50px);
+  height: 50px;
   width: 150%;
   box-shadow: 0px -50px 170px #222;
 }
