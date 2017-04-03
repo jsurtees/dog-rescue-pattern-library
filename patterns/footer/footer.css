@@ -2,6 +2,11 @@
   margin-top: 5em;
   padding: 1em 0;
   border-top: 1px solid #3D3D3D;
+  padding-bottom: 0;
+}
+
+.donate {
+  width: 125px;
 }
 
 .facebook {
@@ -52,6 +57,11 @@
     width: 30%;
   }
 
+  .donate {
+    width: 200px;
+  }
+
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -67,5 +77,10 @@
     display: inline-block;
     width: 30%;
   }
+
+  .donate {
+    width: 220px;
+  }
+
 
 }

@@ -14,8 +14,8 @@
 .apply {
   padding-top: .3em;
   position: relative;
-  margin-top: 5em;
-  margin-left: 18%;
+  margin-top: 4em;
+
 }
 
 @media only screen and (min-width: 35em) {
@@ -24,7 +24,6 @@
     position: absolute;
     display: block;
     margin-top: 0;
-    margin-left: 4%;
   }
 
 }
@@ -35,7 +34,6 @@
     position: absolute;
     display: block;
     margin-top: 0;
-    margin-left: 3%;
   }
 
 }
@@ -46,7 +44,6 @@
     position: absolute;
     display: block;
     margin-top: 0;
-    margin-left: 1%;
   }
 
 }

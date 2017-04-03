@@ -1,4 +1,4 @@
-.icon {
+.logo, h1 {
   height: 80px;
 }
 
@@ -8,6 +8,8 @@
 
 .nav-bar {
   border-bottom: 1px solid #353637;
+  z-index: 1000;
+  background-color: var(--color-primary);
 }
 
 li {
@@ -21,12 +23,16 @@ li {
 .hamburger {
   position: absolute;
   right: 5%;
-  transform: translateY(-100%);
+  transform: translateY(-175%);
 }
 
 .primary-nav {
   display: none;
   background-color: var(--color-primary);
+  top: 0;
+  padding-top: 5em;
+  padding-bottom: 15em;
+  z-index: 500;
 }
 
 .nav-check {
@@ -41,6 +47,10 @@ li {
 
   .hamburger {
     right: 2%
+  }
+
+  .primary-nav {
+    padding-top: 5em;
   }
 
 }
@@ -63,6 +73,10 @@ li {
     right: 2%;
   }
 
+  .primary-nav {
+    padding-top: 10em;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -81,6 +95,10 @@ li {
 
   .hamburger {
     right: 2%;
+  }
+
+  .primary-nav {
+    padding-top: 10em;
   }
 
 }

@@ -1,0 +1,35 @@
+.section-title {
+  border-bottom: 2px solid var(--color-orange);
+}
+
+.card-body {
+  height: 90px;
+}
+
+a.focus {
+  border: none;
+}
+
+@media only screen and (min-width: 35em) {
+
+  .card-body {
+    height: 80px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .card-body {
+    height: 120px;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .card-body {
+    height: 150px;
+  }
+
+}
