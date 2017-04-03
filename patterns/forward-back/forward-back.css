@@ -1,0 +1,52 @@
+.forward,
+.back {
+  display: inline-block;
+}
+
+.forward {
+  padding-right: 1em;
+}
+
+.back {
+  padding-left: 1em;
+}
+
+.apply {
+  padding-top: .3em;
+  position: relative;
+  margin-top: 5em;
+  margin-left: 18%;
+}
+
+@media only screen and (min-width: 35em) {
+
+  .apply {
+    position: absolute;
+    display: block;
+    margin-top: 0;
+    margin-left: 4%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .apply {
+    position: absolute;
+    display: block;
+    margin-top: 0;
+    margin-left: 3%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .apply {
+    position: absolute;
+    display: block;
+    margin-top: 0;
+    margin-left: 1%;
+  }
+
+}

@@ -1,0 +1,71 @@
+.footer {
+  margin-top: 5em;
+  padding: 1em 0;
+  border-top: 1px solid #3D3D3D;
+}
+
+.facebook {
+  margin-right: 2em;
+}
+
+.copyright {
+  text-align: right;
+  width: 65%;
+  margin: 0;
+  display: inline-block;
+}
+
+.all-btns {
+  margin-left: .5em;
+  display: inline-block;
+  width: 30%;
+}
+
+@media only screen and (min-width: 35em) {
+
+  .copyright {
+    text-align: right;
+    width: 68%;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .all-btns {
+    display: inline-block;
+    width: 30%;
+    margin-left: 0;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .copyright {
+    text-align: right;
+    width: 69.5%;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .all-btns {
+    display: inline-block;
+    width: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .copyright {
+    text-align: right;
+    width: 69.5%;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .all-btns {
+    display: inline-block;
+    width: 30%;
+  }
+
+}

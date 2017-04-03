@@ -1,0 +1,86 @@
+.icon {
+  height: 80px;
+}
+
+.logo {
+  left: .8em;
+}
+
+.nav-bar {
+  border-bottom: 1px solid #353637;
+}
+
+li {
+  padding-top: 10px;
+}
+
+.square {
+  padding: 2em;
+}
+
+.hamburger {
+  position: absolute;
+  right: 5%;
+  transform: translateY(-100%);
+}
+
+.primary-nav {
+  display: none;
+  background-color: var(--color-primary);
+}
+
+.nav-check {
+  position: absolute;
+}
+
+@media only screen and (min-width: 35em) {
+
+  li {
+    padding-top: 30px;
+  }
+
+  .hamburger {
+    right: 2%
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  li {
+    padding-top: 40px;
+  }
+
+  .logo {
+    left: 1%;
+  }
+
+  nav {
+    padding-top: 4em;
+  }
+
+  .hamburger {
+    right: 2%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  li {
+    padding-top: 50px;
+  }
+
+  .logo {
+    left: 1%;
+  }
+
+  nav {
+    padding-top: 6em;
+  }
+
+  .hamburger {
+    right: 2%;
+  }
+
+}

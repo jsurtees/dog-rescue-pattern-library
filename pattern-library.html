@@ -53,7 +53,11 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#banner">Banner</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#footer">Footer</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forward-back">Forward back</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#homescreen-nav">Homescreen nav</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#nav">Nav</a></li>
           </ul>
         </nav>
       </div>
@@ -686,6 +690,8 @@
 <ul>
 <li>Regular buttons are for forms, donation buttons, and anything else. They use the orange accent color.</li>
 <li>Card buttons are only to be used with cards - nowhere else.</li>
+<li>Back and forward buttons are used while viewing a specifics dogs page. These move the user from dog to dog.</li>
+<li>The F button is a facebook link.</li>
 </ul>
 <p>The primary button could vary in size, but not the card button.</p>
 </div>
@@ -718,6 +724,24 @@
             <div class="pattern-code milli island-1-2">
               <code><pre>&lt;a class="btn" href="#"&gt;STANDARD BUTTON&lt;/a>
 &lt;a class="btn-card" href="#">Button for cards&lt;/a>
+
+&lt;div class="back">
+  &lt;p class="btn-text push-1-4">PREVIOUS DOG&lt;/p>
+  &lt;a class="btn-round btn-back" href="#">
+    &lt;img class="icon i-32" src="images/back.svg" alt="Click to go back">
+  &lt;/a>
+&lt;/div>
+
+&lt;div class="forward text-right">
+  &lt;p class="btn-text push-1-4">NEXT DOG&lt;/p>
+  &lt;a class="btn-round btn-forward text-right" href="#">
+    &lt;img class="icon i-32" src="images/forward.svg" alt="Click to go forward">
+  &lt;/a>
+&lt;/div>
+
+&lt;a class="facebook-btn" href="https://www.facebook.com/NewBeginningsPetRescue">
+  &lt;img class="icon i-32" src="images/facebook.svg">
+&lt;/a>
 </pre></code>
             </div>
           </div>
@@ -828,13 +852,72 @@
             <div class="pattern-code milli island-1-2">
               <code><pre>&lt;div class="nav-btn"&gt;
   &lt;div class="icon-holder block">
-    &lt;i class="icon i-64 push-half">
+    &lt;i class="icon i-64 push-half icon-size">
         &lt;img class="img-flex" src="images/home-icon.svg" alt="">
       &lt;/i>
   &lt;/div>
   &lt;a class="nav-btn-square" href="#">
     &lt;h2 class="nav-btn-txt yotta push-none">HOME&lt;/h2>
   &lt;/a>
+&lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="footer">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Footer</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/footer/footer.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="footer-footer">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/footer/footer.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;div class="footer padding-top"&gt;
+  &lt;footer class="wrapper">
+    &lt;div class="all-btns">
+      &lt;a class="facebook-btn push" href="https://www.facebook.com/NewBeginningsPetRescue">
+        &lt;img class="icon i-32 facebook" src="images/facebook.svg">
+      &lt;/a>
+      &lt;a class="btn donate" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=a1efd36de0109&amp;mfid=1491176546058_c781a76fe6100#/checkout/openButton">DONATE&lt;/a>
+    &lt;/div>
+    &lt;div class="text-right copyright">
+      &lt;small>&#xA9; New Beginnings 2017&lt;/small>
+    &lt;/div>
+  &lt;/footer>
 &lt;/div>
 </pre></code>
             </div>
@@ -1229,6 +1312,258 @@
     &lt;/p>
   &lt;/div>
 &lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="forward-back">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Forward back</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/forward-back/forward-back.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>This navigation section will appear within each specific dogs page. The user can jump from dog to dog or apply for the dog.</p>
+</div>
+    </div>
+
+  
+
+    <div class="pattern-details" id="forward-back-forward-back">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/forward-back/forward-back.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;section class="forward-back wrapper relative island"&gt;
+
+  &lt;div class="apply  pin-top-center">
+    &lt;a class="btn" href="#">APPLY FOR DOG&lt;/a>
+  &lt;/div>
+
+  &lt;div class="back absolute pin-top-left">
+    &lt;p class="btn-text push-1-4">PREVIOUS DOG&lt;/p>
+    &lt;a class="btn-round btn-back" href="#">
+      &lt;img class="icon i-32" src="images/back.svg" alt="Click to go back">
+    &lt;/a>
+  &lt;/div>
+
+  &lt;div class="forward text-right absolute pin-top-right">
+    &lt;p class="btn-text push-1-4">NEXT DOG&lt;/p>
+    &lt;a class="btn-round btn-forward" href="#">
+      &lt;img class="icon i-32" src="images/forward.svg" alt="Click to go forward">
+    &lt;/a>
+  &lt;/div>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="homescreen-nav">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Homescreen nav</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/homescreen-nav/homescreen-nav.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="homescreen-nav-homescreen-nav">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/homescreen-nav/homescreen-nav.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;section class="grid wrapper"&gt;
+  &lt;div class="1 unit xs-1 s-1 m-1-2 l-1-4 text-center pad-t-1-2">
+    &lt;a class="btn" href="#">HOME&lt;/a>
+  &lt;/div>
+  &lt;div class="2 unit xs-1 s-1 m-1-2 l-1-4 text-center pad-t-1-2">
+    &lt;a class="btn" href="#">ADOPTABLE&lt;/a>
+  &lt;/div>
+  &lt;div class="3 unit xs-1 s-1 m-1-2 l-1-4 text-center pad-t-1-2">
+    &lt;a class="btn" href="#">FORMS&lt;/a>
+  &lt;/div>
+  &lt;div class="4 unit xs-1 s-1 m-1-2 l-1-4 text-center pad-t-1-2">
+    &lt;a class="btn" href="#">CONTACT&lt;/a>
+  &lt;/div>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="nav">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Nav</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/nav/nav.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="nav-nav">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/nav/nav.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;input type="checkbox" class="nav-check" id="nav-check"&gt;
+
+&lt;div class="nav-bar block">
+  &lt;div class="wrapper relative">
+    &lt;h1 class="push-none">
+        &lt;i class="icon i-128 logo">
+          &lt;img class="nav-logo" src="images/logo-886.svg" alt="broken">
+        &lt;/i>
+      &lt;/h1>
+    &lt;div class="hamburger">
+      &lt;label for="nav-check">
+        &lt;i class="icon i-32">
+            &lt;img class="nav-close" src="images/hamburger.svg" alt="open nav">
+            &lt;img class="nav-open" src="images/no-hamburger.svg" alt="close nav">
+          &lt;/i>
+      &lt;/label>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+
+&lt;nav class="primary-nav">
+  &lt;div class="wrapper">
+    &lt;ul class="grid nav">
+      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+        &lt;div class="sqaure">
+          &lt;div class="nav-btn home">
+            &lt;div class="icon-holder block">
+              &lt;i class="icon i-64 push-half">
+                &lt;img class="img-flex" src="images/home-icon.svg" alt="">
+              &lt;/i>
+            &lt;/div>
+            &lt;a class="nav-btn-square" href="#">
+              &lt;h2 class="nav-btn-txt yotta push-none">HOME&lt;/h2>
+            &lt;/a>
+          &lt;/div>
+        &lt;/div>
+      &lt;/li>
+      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+        &lt;div class="nav-btn adoptable">
+          &lt;div class="icon-holder block">
+            &lt;i class="icon i-64 push-half">
+                &lt;img class="img-flex" src="images/dog-icon.svg" alt="">
+              &lt;/i>
+          &lt;/div>
+          &lt;a class="nav-btn-square" href="#">
+            &lt;h2 class="nav-btn-txt yotta push-none">ADOPTABLE&lt;/h2>
+          &lt;/a>
+        &lt;/div>
+      &lt;/li>
+      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+        &lt;div class="nav-btn forms">
+          &lt;div class="icon-holder block">
+            &lt;i class="icon i-64 push-half">
+                &lt;img class="img-flex" src="images/form-icon.svg" alt="">
+              &lt;/i>
+          &lt;/div>
+          &lt;a class="nav-btn-square" href="#">
+            &lt;h2 class="nav-btn-txt yotta push-none">FORMS&lt;/h2>
+          &lt;/a>
+        &lt;/div>
+      &lt;/li>
+      &lt;li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+        &lt;div class="nav-btn contact">
+          &lt;div class="icon-holder block">
+            &lt;i class="icon i-64 push-half">
+                &lt;img class="img-flex" src="images/contact-icon.svg" alt="">
+              &lt;/i>
+          &lt;/div>
+          &lt;a class="nav-btn-square" href="#">
+            &lt;h2 class="nav-btn-txt yotta push-none">CONTACT&lt;/h2>
+          &lt;/a>
+        &lt;/div>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/nav>
 </pre></code>
             </div>
           </div>

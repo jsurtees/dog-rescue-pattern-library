@@ -46,9 +46,10 @@
   box-shadow: 0 0 6px #222;
   background-color: var(--color-primary);
   border: 3px solid var(--color-orange);
-  padding: 4em;
   border-radius: 3px;
   transition: all .3s ease-in;
+  width: 8em;
+  padding: 2.6em 0;
 }
 
 .nav-btn-square:hover .nav-btn-txt {
@@ -58,4 +59,69 @@
 .nav-btn-square:hover {
   background-color: var(--color-orange);
   color: var(--color-primary);
+}
+
+.icon-size {
+  max-width: 32px;
+}
+
+.icon-hover-on {
+  animation: iconslideup .5s ease-in-out;
+  animation-direction: forwards;
+  animation-iteration-count: 0;
+}
+
+@keyframes iconslideup {
+  to {transform: scale(1);}
+  from {transform: scale(1.25) translateY(-10px);}
+}
+
+.icon-hover-off {
+  animation: iconslidedown .5s ease-in-out;
+  animation-direction: forwards;
+  animation-iteration-count: 0;
+}
+
+@keyframes iconslidedown {
+  to {transform: scale(1.25);}
+  from {transform: scale(1) translateY(0px);;}
+}
+
+@media only screen and (min-width: 35em) {
+
+  .nav-btn-square {
+    width: 8.5em;
+    padding: 2.5em 0;
+  }
+
+  .icon-size {
+    max-width: 32px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .nav-btn-square {
+    width: 12em;
+    padding: 4.2em 0;
+  }
+
+  .icon-size {
+    max-width: 64px;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .nav-btn-square {
+    width: 12em;
+    padding: 4.2em 0;
+  }
+
+  .icon-size {
+    max-width: 128px;
+  }
+
 }
