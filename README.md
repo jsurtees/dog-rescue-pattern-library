@@ -1,4 +1,6 @@
 ---
+outputFile: "index.html"
+
 name: "New Beginnings Pet Rescue"
 backgroundColor: "#4f4d4e"
 fontUrl: "https://fonts.googleapis.com/css?family=Amatica+SC:700|Dosis:300,600"

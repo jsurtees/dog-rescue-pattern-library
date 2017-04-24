@@ -15,11 +15,14 @@
 .card-body {
   background-color: #fff;
   margin: 0;
+  height: 210px;
 }
 
 .card-body-txt {
   margin: 0;
   color: black;
+  font-size: .7rem;
+  line-height: 1.2rem;
 }
 
 .dog-age {
@@ -98,6 +101,10 @@
     max-width: 32px;
   }
 
+  .card-body {
+    height: 250px;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -111,6 +118,14 @@
     max-width: 64px;
   }
 
+  .card-body {
+    height: 230px;
+  }
+
+  .card-body-txt {
+    font-size: .65rem;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -122,6 +137,14 @@
 
   .icon-size {
     max-width: 128px;
+  }
+
+  .card-body {
+    height: 250px;
+  }
+
+  .card-body-txt {
+    font-size: .65rem;
   }
 
 }

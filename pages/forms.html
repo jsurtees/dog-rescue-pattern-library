@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Adopt</title>
+  <link rel="stylesheet" href="../common/modules.css">
+  <link rel="stylesheet" href="../common/grid.css">
+  <link rel="stylesheet" href="../common/type.css">
+  <link rel="stylesheet" href="../common/theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Amatica+SC:700|Dosis:300,600" rel="stylesheet">
+  <link rel="stylesheet" href="../patterns/nav/nav.css">
+  <link rel="stylesheet" href="../patterns/cards/cards.css">
+  <link rel="stylesheet" href="../patterns/buttons/buttons.css">
+  <link rel="stylesheet" href="../patterns/footer/footer.css">
+  <link href="../patterns/homescreen-nav/homescreen-nav.css" rel="stylesheet">
+  <link href="../patterns/events-links/events-links.css" rel="stylesheet">
+  <link rel="stylesheet" href="../patterns/forms/all-types.css">
+</head>
+<body>
+
+  <section class="nav">
+    <input type="checkbox" class="nav-check" id="nav-check">
+
+    <div class="nav-bar fixed w-1 block">
+      <div class="wrapper relative">
+        <h1 class="push-none">
+          <i class="icon i-128 logo">
+            <img class="nav-logo" src="../images/logo-886.svg" alt="broken">
+          </i>
+        </h1>
+        <div class="hamburger">
+          <label for="nav-check">
+            <i class="icon i-32">
+              <img class="nav-close" src="../images/hamburger.svg" alt="open nav">
+              <img class="nav-open" src="../images/no-hamburger.svg" alt="close nav">
+            </i>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <nav class="primary-nav fixed w-1">
+      <div class="wrapper">
+        <ul class="grid nav">
+          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+            <div class="sqaure">
+            <div class="nav-btn home">
+              <div class="icon-holder block">
+                <i class="icon i-64 push-half">
+                  <img class="img-flex" src="../images/home-icon.svg" alt="">
+                </i>
+              </div>
+              <a class="nav-btn-square" href="home.html">
+                <h2 class="nav-btn-txt yotta push-none">HOME</h2>
+              </a>
+            </div>
+          </div>
+          </li>
+          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+            <div class="nav-btn adoptable">
+              <div class="icon-holder block">
+                <i class="icon i-64 push-half">
+                  <img class="img-flex" src="../images/dog-icon.svg" alt="">
+                </i>
+              </div>
+              <a class="nav-btn-square" href="adoptable.html">
+                <h2 class="nav-btn-txt yotta push-none">ADOPTABLE</h2>
+              </a>
+            </div>
+          </li>
+          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+            <div class="nav-btn forms">
+              <div class="icon-holder block">
+                <i class="icon i-64 push-half">
+                  <img class="img-flex" src="../images/form-icon.svg" alt="">
+                </i>
+              </div>
+              <a class="nav-btn-square" href="forms.html">
+                <h2 class="nav-btn-txt yotta push-none">FORMS</h2>
+              </a>
+            </div>
+          </li>
+          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+            <div class="nav-btn contact">
+              <div class="icon-holder block">
+                <i class="icon i-64 push-half">
+                  <img class="img-flex" src="../images/contact-icon.svg" alt="">
+                </i>
+              </div>
+              <a class="nav-btn-square" href="#">
+                <h2 class="nav-btn-txt yotta push-none">CONTACT</h2>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section class="push-2">
+    <div class="section-title push-2 pad-t-2">
+      <div class="wrapper gutter-1-8">
+        <h2 class="push-1-2 pad-t title">Adoption Application</h2>
+      </div>
+    </div>
+    <div class="grid disclaimer wrapper push">
+      <div class="unit xs-1 s-1 m-1-2 l-1-3">
+        <p class="milli">The adoption fee is $400. Adopters will recieve a $50 refund after we recieve proof that he has graduated from a min of level one in obedience classes within 6 months of adoption. Expect to spend up to 20 minutes to fill in the form. Download this form at the bottom.</p>
+      </div>
+    </div>
+    <div class="form">
+      <form method="post" novalidate>
+        <div class="error-message error-meesage-highlighted push-2 wrapper" role="alert" aria-live="assertive">
+          <h3 class="push-0 error-top pad-top-half pad-bottom-half gutter-1-2">
+            <span class="check">All sections must be filled. Or check format of highlighted answers.</span>
+          </h3>
+        </div>
+        <div class="wrapper grid">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="date">Date</label>
+            <input type="date" id="date" required aria-describedby="date-error">
+            <p class="error-message milli island-1-4 push-0" id="date-error">
+              <span>Enter the date as yyyy-mm-dd</span>
+            </p>
+          </div>
+          <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="dogs">Dog</label>
+            <select id="dogs" name="dogs">
+              <option class="error-message" value="">Choose a dog</option>
+              <option>Blue</option>
+              <option>Fennec</option>
+              <option>Luna</option>
+              <option>Bubbles</option>
+              <option>Chai</option>
+              <option>Ella</option>
+            </select>
+          </div>
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1">
+            <label class="label exa push-1-2" for="why-chosen">Why this dog?</label>
+            <textarea id="why-chosen" name="why-chosen"></textarea>
+          </div>
+        </div>
+        <div class="wrapper grid">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="name">Name</label>
+            <input type="text" id="name" placeholder="First Last" required aria-describedby="name-error">
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <span>Enter your first and last name</span>
+            </p>
+          </div>
+          <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="address">Address</label>
+            <input type="text" id="address" required aria-describedby="address-error">
+            <p class="error-message milli island-1-4 push-0" id="address-error">
+              <span>Enter your full address (Street, Number, City)</span>
+            </p>
+          </div>
+          <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="phone">Phone Number</label>
+            <input type="text" id="phone" required aria-describedby="phone-error">
+            <p class="error-message milli island-1-4 push-0" id="phone-error">
+              <span>(area code) xxx-xxxx</span>
+            </p>
+          </div>
+        </div>
+        <div class="wrapper grid">
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="children">Children (# and Ages)</label>
+            <textarea id="children" name="children"></textarea>
+          </div>
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="pets">Other Pets (list)</label>
+            <textarea id="pets" name="pets"></textarea>
+          </div>
+        </div>
+        <div class="grid disclaimer wrapper pad-t-2 push">
+          <div class="unit xs-1 s-1 m-1-2 l-1-3">
+            <p class="milli">Please note that we have to abide by local bylaws and will not adopt out dogs to homes that may already be at the legal limit for their area.</p>
+          </div>
+        </div>
+
+        <div class="rule push-2">
+        </div>
+
+        <div class="wrapper">
+          <h2 class="sub-head">Reference (non-relative)</h2>
+        </div>
+        <div class="wrapper grid push-2">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="name-ref">Name</label>
+            <input type="text" id="name-ref" placeholder="First Last" required aria-describedby="name-error">
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <span>Enter your references first and last name</span>
+            </p>
+          </div>
+          <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="phone-ref">Phone Number</label>
+            <input type="text" id="phone-ref" required aria-describedby="phone-error">
+            <p class="error-message milli island-1-4 push-0" id="phone-error">
+              <span>(area code) xxx-xxxx</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="rule">
+        </div>
+
+        <div class="wrapper pad-t-2">
+          <h2 class="sub-head">Home Environment</h2>
+        </div>
+        <div class="wrapper grid">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="own">Ownership</label>
+            <input class="radio-button" type="radio" name="ownership" id="own" required aria-describedby="ownership-error">
+            <label class="button-label push-1-2" for="own">Own</label>
+            <input class="radio-button" type="radio" name="ownership" id="rent" required aria-describedby="ownership-error">
+            <label class="button-label push-1-2" for="rent">Rent</label>
+            <p class="error-message milli island-1-4 push-0" id="ownership-error">
+              <span>Select one</span>
+            </p>
+          </div>
+          <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="fence">Fenced Yard?</label>
+            <input class="radio-button" type="radio" name="fence" id="fence-yes" required aria-describedby="ownership-error">
+            <label class="button-label push-1-2" for="fence-yes">Yes</label>
+            <input class="radio-button" type="radio" name="fence" id="fence-no" required aria-describedby="ownership-error">
+            <label class="button-label push-1-2" for="fence-no">No</label>
+            <p class="error-message milli island-1-4 push-0" id="ownership-error">
+              <span>Select one</span>
+            </p>
+          </div>
+          <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="allow">Does Renter Allow Dogs?</label>
+            <input class="radio-button" type="radio" name="allow" id="yes" required aria-describedby="allow-error">
+            <label class="button-label push-1-2" for="yes">Yes</label>
+            <input class="radio-button" type="radio" name="allow" id="no" required aria-describedby="allow-error">
+            <label class="button-label push-1-2" for="no">No</label>
+            <p class="error-message milli island-1-4 push-0" id="allow-error">
+              <span>Select one</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper grid">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="fence">Fence Type</label>
+            <input type="text" id="fence" required aria-describedby="fencetype-error">
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <span>Wooden, interlock, etc.</span>
+            </p>
+          </div>
+          <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="height">Fence Height</label>
+            <input type="text" id="height" required aria-describedby="fenceheight-error">
+            <p class="error-message milli island-1-4 push-0" id="fenceheight-error">
+              <span>Enter the height of your fence with units</span>
+            </p>
+          </div>
+          <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="housetype">House Type</label>
+            <select id="housetype" name="housetype">
+              <option class="error-message" value="">Choose a type</option>
+              <option>House</option>
+              <option>Townhouse</option>
+              <option>Condo</option>
+              <option>Appartment</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="wrapper grid pad-t-1-2">
+          <div class="left-alone-wide push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="hours">How Many Hours a Day Will Your Dog be Alone?</label>
+            <input class="radio-button" type="radio" name="hours" id="0-5" required aria-describedby="05-error">
+            <label class="button-label push-1-2" for="0-5">0-5 hrs</label>
+            <input class="radio-button" type="radio" name="hours" id="6-8" required aria-describedby="68-error">
+            <label class="button-label push-1-2" for="6-8">6-8 hrs</label>
+            <input class="radio-button" type="radio" name="hours" id="9-12" required aria-describedby="912-error">
+            <label class="button-label push-1-2" for="9-12">9-12 hrs</label>
+            <input class="radio-button" type="radio" name="hours" id="12+" required aria-describedby="12+-error">
+            <label class="button-label push-1-2" for="12+">12+ hrs</label>
+            <p class="error-message milli island-1-4 push-0" id="ownership-error">
+              <span>Select one</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="wrapper grid">
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="alone-pet">Where Will Your Dog be Kept When Alone?</label>
+            <textarea id="alone-pet" name="alone-pet"></textarea>
+          </div>
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="home-pet">Where Will Your Dog be Kept When You Are Home</label>
+            <textarea id="home-pet" name="home-pet"></textarea>
+          </div>
+        </div>
+
+        <div class="wrapper grid">
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="exercise">How Will you Exercise Your Dog?</label>
+            <textarea id="exercise" name="exercise"></textarea>
+          </div>
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="behavior">How Will You Encourage Good Behavior</label>
+            <textarea id="behavior" name="behavior"></textarea>
+          </div>
+        </div>
+
+        <div class="wrapper grid">
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="playtime">How Much Dog Playtime per Day?</label>
+            <textarea id="playtime" name="playtime"></textarea>
+          </div>
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="away">Who Cares for the Dog While You Are Away?</label>
+            <textarea id="away" name="away"></textarea>
+          </div>
+        </div>
+
+        <div class="wrapper grid pad-t-1-2 push">
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="obedience">Will You Bring Your Dog to Obedience Class?</label>
+            <input class="radio-button" type="radio" name="obedience" id="class-yes" required aria-describedby="classyes-error">
+            <label class="button-label push-1-2" for="class-yes">Yes</label>
+            <input class="radio-button" type="radio" name="obedience" id="class-no" required aria-describedby="classno-error">
+            <label class="button-label push-1-2" for="class-no">No</label>
+            <p class="error-message milli island-1-4 push-0" id="obedience-error">
+              <span>Select one</span>
+            </p>
+          </div>
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="move">Where will Your Dog Go if You Move?</label>
+            <input class="radio-button" type="radio" name="move" id="goif-yes" required aria-describedby="classyes-error">
+            <label class="button-label push-1-2" for="goif-yes">Yes</label>
+            <input class="radio-button" type="radio" name="move" id="goif-no" required aria-describedby="classno-error">
+            <label class="button-label push-1-2" for="goif-no">No</label>
+            <p class="error-message milli island-1-4 push-0" id="move-error">
+              <span>Select one</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="rule">
+        </div>
+
+        <div class="wrapper pad-t-2">
+          <h2 class="sub-head">Finding the Perfect Match</h2>
+        </div>
+
+        <div class="wrapper grid">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="why-dog">Why Do you Want a Dog?</label>
+            <select id="why-dog" name="why-dog">
+              <option class="error-message" value="">Why?</option>
+              <option>Protection</option>
+              <option>Friend</option>
+              <option>For Children</option>
+            </select>
+          </div>
+          <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="caretaker">Dogs Primary Caretaker</label>
+            <input type="text" id="caretaker" required aria-describedby="caretaker-error">
+            <p class="error-message milli island-1-4 push-0" id="caretaker-error">
+              <span>Enter your first and last name</span>
+            </p>
+          </div>
+          <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="activity-level">Preferred Activeness?</label>
+            <select id="activity-level" name="activity-level">
+              <option class="error-message" value="">Choose</option>
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="wrapper grid">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="sleep">Where will Your Dog Sleep?</label>
+            <input type="text" id="sleep" required aria-describedby="sleep-error">
+            <p class="error-message milli island-1-4 push-0" id="sleep-error">
+              <span>Enter your first and last name</span>
+            </p>
+          </div>
+          <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="coat">Type of Coat</label>
+            <select id="coat" name="coat">
+              <option class="error-message" value="">Type</option>
+              <option>Long</option>
+              <option>Short</option>
+              <option>No Preference</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="wrapper grid pad-t-1-2 push">
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="brushing">Will the Dog be Brushed Often?</label>
+            <input class="radio-button" type="radio" name="brushing" id="brush-yes" required aria-describedby="classyes-error">
+            <label class="button-label push-1-2" for="brush-yes">Yes</label>
+            <input class="radio-button" type="radio" name="brushing" id="brushing-no" required aria-describedby="classno-error">
+            <label class="button-label push-1-2" for="brushing-no">No</label>
+            <p class="error-message milli island-1-4 push-0" id="obedience-error">
+              <span>Select one</span>
+            </p>
+          </div>
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="allergy">Are Family Mambers Allergic?</label>
+            <input class="radio-button" type="radio" name="allergy" id="allergy-yes" required aria-describedby="classyes-error">
+            <label class="button-label push-1-2" for="allergy-yes">Yes</label>
+            <input class="radio-button" type="radio" name="allergy" id="allergy-no" required aria-describedby="classno-error">
+            <label class="button-label push-1-2" for="allergy-no">No</label>
+            <p class="error-message milli island-1-4 push-0" id="allergy-error">
+              <span>Select one</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="rule">
+        </div>
+
+        <div class="wrapper pad-t-2">
+          <h2 class="sub-head">Pet History</h2>
+        </div>
+
+        <div class="wrapper grid">
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="previously">Pets Previously Owned</label>
+            <textarea id="previously" name="previously"></textarea>
+          </div>
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="vet">What Vet Have You Used in This Area?</label>
+            <textarea id="vet" name="vet"></textarea>
+          </div>
+        </div>
+
+        <div class="wrapper grid pad-t-1-2 push">
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="homevisit">Will You Permit a Home Visit?</label>
+            <input class="radio-button" type="radio" name="homevisit" id="home-yes" required aria-describedby="homevisit-error">
+            <label class="button-label push-1-2" for="home-yes">Yes</label>
+            <input class="radio-button" type="radio" name="homevisit" id="home-no" required aria-describedby="homevisit-error">
+            <label class="button-label push-1-2" for="home-no">No</label>
+            <p class="error-message milli island-1-4 push-0" id="homevisit-error">
+              <span>Select one</span>
+            </p>
+          </div>
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="vetcheck">Do You Authorize a Vet Check?</label>
+            <input class="radio-button" type="radio" name="vetcheck" id="check-yes" required aria-describedby="vetcheck-error">
+            <label class="button-label push-1-2" for="check-yes">Yes</label>
+            <input class="radio-button" type="radio" name="vetcheck" id="check-no" required aria-describedby="vetcheck-error">
+            <label class="button-label push-1-2" for="check-no">No</label>
+            <p class="error-message milli island-1-4 push-0" id="vetcheck-error">
+              <span>Select one</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="pad-t-1-2 wrapper sub">
+          <button class="btn" type="submit" href="#">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="footer padding-top push">
+    <footer class="wrapper">
+      <div class="all-btns text-center">
+        <a class="facebook-btn push" href="https://www.facebook.com/NewBeginningsPetRescue">
+          <img class="icon i-32 facebook" src="../images/facebook.svg">
+        </a>
+        <a class="btn donate" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=a1efd36de0109&mfid=1491176546058_c781a76fe6100#/checkout/openButton">DONATE</a>
+      </div>
+      <div class="text-right copyright">
+        <small class="">© New Beginnings 2017</small>
+      </div>
+    </footer>
+  </section>
+
+    <script src="../common/js/jquery-3.2.0.min.js"></script>
+    <script src="../common/js/script.js"></script>
+    <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+
+</body>
+</html>

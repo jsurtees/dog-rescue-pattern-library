@@ -1,0 +1,8 @@
+.section-title {
+  padding-top: 6em;
+  border-bottom: 2px solid var(--color-orange);
+}
+
+.card-title {
+  font-size: 1.4em;
+}

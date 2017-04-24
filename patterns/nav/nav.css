@@ -31,8 +31,9 @@ li {
   background-color: var(--color-primary);
   top: 0;
   padding-top: 5em;
-  padding-bottom: 15em;
+  padding-bottom: 20em;
   z-index: 500;
+  overflow: hidden;
 }
 
 .nav-check {
