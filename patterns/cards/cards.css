@@ -15,7 +15,7 @@
 .card-body {
   background-color: #fff;
   margin: 0;
-  height: 180px;
+  height: 12.5rem;
 }
 
 .card-body-txt {
@@ -102,7 +102,7 @@
   }
 
   .card-body {
-    height: 250px;
+    height: 14rem;
   }
 
   .card-body-txt {
@@ -126,7 +126,7 @@
   }
 
   .card-body {
-    height: 230px;
+    height: 15rem;
   }
 
   .card-body-txt {
@@ -154,7 +154,7 @@
   }
 
   .card-body {
-    height: 250px;
+    height: 14rem;
   }
 
   .card-body-txt {
