@@ -75,6 +75,7 @@ html {
     background-attachment: fixed;
     overflow: hidden;
     transform: translateY(60px);
+    width: 100%;
   }
 
 }
