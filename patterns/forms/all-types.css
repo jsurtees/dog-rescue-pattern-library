@@ -111,6 +111,10 @@ input[type="radio"] + label::before {
   padding-left: .5em;
 }
 
+.error-message {
+  color: var(--color-orange);
+}
+
 @media only screen and (min-width: 35em) {
 
   .left {
