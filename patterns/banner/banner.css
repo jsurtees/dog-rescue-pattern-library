@@ -67,6 +67,16 @@ html {
     }
   }
 
+  .banner {
+    background-image: url("images/banner-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    overflow: hidden;
+    transform: translateY(60px);
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
