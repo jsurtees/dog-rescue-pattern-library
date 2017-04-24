@@ -30,7 +30,7 @@ li {
   display: none;
   background-color: var(--color-primary);
   top: 0;
-  padding-top: 7em;
+  padding-top: 9em;
   padding-bottom: 20em;
   z-index: 500;
   overflow: hidden;
