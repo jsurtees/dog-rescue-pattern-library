@@ -9,7 +9,8 @@ html {
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
-  transform: translateY(60px);
+  transform: translateY(200px);
+  width: 100%;
 }
 
 .banner-content {
@@ -87,6 +88,16 @@ html {
     padding-bottom: 17%;
   }
 
+  .banner {
+    background-image: url("images/banner-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    transform: translateY(60px);
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -99,6 +110,16 @@ html {
   .content {
     transform: translate(-10%, 50px);
     height: 50px;
+  }
+
+  .banner {
+    background-image: url("images/banner-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    transform: translateY(60px);
   }
 
 }
