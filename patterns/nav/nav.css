@@ -32,6 +32,7 @@ li {
   top: 0;
   padding-top: 5em;
   padding-bottom: 20em;
+  border-bottom: 100px solid var(--color-primary);
   z-index: 500;
   overflow: hidden;
 }
