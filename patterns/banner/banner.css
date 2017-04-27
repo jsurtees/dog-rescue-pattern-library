@@ -25,7 +25,7 @@ html {
   transform: translate(-10%, 50px);
   height: 20px;
   width: 150%;
-  box-shadow: 0px -50px 170px #222;
+  box-shadow: 0 -50px 170px #222;
 }
 
 .subhead {
@@ -39,6 +39,22 @@ html {
   animation: fade 3s ease-in-out infinite;
 }
 
+@keyframes fade {
+
+  0% {
+    opacity: .2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .2;
+  }
+
+}
+
 @media only screen and (min-width: 35em) {
 
   .banner-content {
@@ -49,22 +65,6 @@ html {
 
   .up-arrow {
     visibility: visible;
-  }
-
-  @keyframes fade {
-
-    0% {
-      opacity: 0.2;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0.2;
-    }
-
   }
 
   .banner {
