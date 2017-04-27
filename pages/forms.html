@@ -45,17 +45,17 @@
         <ul class="grid nav">
           <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
             <div class="sqaure">
-            <div class="nav-btn home">
-              <div class="icon-holder block">
-                <i class="icon i-64 push-half">
-                  <img class="img-flex" src="../images/home-icon.svg" alt="">
-                </i>
+              <div class="nav-btn home">
+                <div class="icon-holder block">
+                  <i class="icon i-64 push-half">
+                    <img class="img-flex" src="../images/home-icon.svg" alt="">
+                  </i>
+                </div>
+                <a class="nav-btn-square" href="home.html">
+                  <h2 class="nav-btn-txt yotta push-none">HOME</h2>
+                </a>
               </div>
-              <a class="nav-btn-square" href="home.html">
-                <h2 class="nav-btn-txt yotta push-none">HOME</h2>
-              </a>
             </div>
-          </div>
           </li>
           <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
             <div class="nav-btn adoptable">
@@ -189,15 +189,15 @@
         <div class="wrapper grid push-2">
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="name-ref">Name</label>
-            <input type="text" id="name-ref" placeholder="First Last" required aria-describedby="name-error">
-            <p class="error-message milli island-1-4 push-0" id="name-error">
+            <input type="text" id="name-ref" placeholder="First Last" required aria-describedby="name2-error">
+            <p class="error-message milli island-1-4 push-0" id="name2-error">
               <span>Enter your references first and last name</span>
             </p>
           </div>
           <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="phone-ref">Phone Number</label>
-            <input type="text" id="phone-ref" required aria-describedby="phone-error">
-            <p class="error-message milli island-1-4 push-0" id="phone-error">
+            <input type="text" id="phone-ref" required aria-describedby="phone2-error">
+            <p class="error-message milli island-1-4 push-0" id="phone2-error">
               <span>(area code) xxx-xxxx</span>
             </p>
           </div>
@@ -222,16 +222,16 @@
           </div>
           <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="fence">Fenced Yard?</label>
-            <input class="radio-button" type="radio" name="fence" id="fence-yes" required aria-describedby="ownership-error">
+            <input class="radio-button" type="radio" name="fence" id="fence-yes" required aria-describedby="fenced-error">
             <label class="button-label push-1-2" for="fence-yes">Yes</label>
-            <input class="radio-button" type="radio" name="fence" id="fence-no" required aria-describedby="ownership-error">
+            <input class="radio-button" type="radio" name="fence" id="fence-no" required aria-describedby="fenced-error">
             <label class="button-label push-1-2" for="fence-no">No</label>
-            <p class="error-message milli island-1-4 push-0" id="ownership-error">
+            <p class="error-message milli island-1-4 push-0" id="fenced-error">
               <span>Select one</span>
             </p>
           </div>
           <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="allow">Does Renter Allow Dogs?</label>
+            <h2 class="label exa push-1-2">Does Renter Allow Dogs?</h2>
             <input class="radio-button" type="radio" name="allow" id="yes" required aria-describedby="allow-error">
             <label class="button-label push-1-2" for="yes">Yes</label>
             <input class="radio-button" type="radio" name="allow" id="no" required aria-describedby="allow-error">
@@ -246,7 +246,7 @@
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="fence">Fence Type</label>
             <input type="text" id="fence" required aria-describedby="fencetype-error">
-            <p class="error-message milli island-1-4 push-0" id="name-error">
+            <p class="error-message milli island-1-4 push-0" id="fencetype-error">
               <span>Wooden, interlock, etc.</span>
             </p>
           </div>
@@ -271,16 +271,16 @@
 
         <div class="wrapper grid pad-t-1-2">
           <div class="left-alone-wide push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="hours">How Many Hours a Day Will Your Dog be Alone?</label>
-            <input class="radio-button" type="radio" name="hours" id="0-5" required aria-describedby="05-error">
+            <h2 class="label exa push-1-2">How Many Hours a Day Will Your Dog be Alone?</h2>
+            <input class="radio-button" type="radio" name="hours" id="0-5" required aria-describedby="alone-error">
             <label class="button-label push-1-2" for="0-5">0-5 hrs</label>
-            <input class="radio-button" type="radio" name="hours" id="6-8" required aria-describedby="68-error">
+            <input class="radio-button" type="radio" name="hours" id="6-8" required aria-describedby="alone-error">
             <label class="button-label push-1-2" for="6-8">6-8 hrs</label>
-            <input class="radio-button" type="radio" name="hours" id="9-12" required aria-describedby="912-error">
+            <input class="radio-button" type="radio" name="hours" id="9-12" required aria-describedby="alone-error">
             <label class="button-label push-1-2" for="9-12">9-12 hrs</label>
-            <input class="radio-button" type="radio" name="hours" id="12+" required aria-describedby="12+-error">
+            <input class="radio-button" type="radio" name="hours" id="12+" required aria-describedby="alone-error">
             <label class="button-label push-1-2" for="12+">12+ hrs</label>
-            <p class="error-message milli island-1-4 push-0" id="ownership-error">
+            <p class="error-message milli island-1-4 push-0" id="alone-error">
               <span>Select one</span>
             </p>
           </div>
@@ -321,23 +321,20 @@
 
         <div class="wrapper grid pad-t-1-2 push">
           <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="obedience">Will You Bring Your Dog to Obedience Class?</label>
-            <input class="radio-button" type="radio" name="obedience" id="class-yes" required aria-describedby="classyes-error">
+            <h2 class="label exa push-1-2">Will You Bring Your Dog to Obedience Class?</h2>
+            <input class="radio-button" type="radio" name="obedience" id="class-yes" required aria-describedby="class-error">
             <label class="button-label push-1-2" for="class-yes">Yes</label>
-            <input class="radio-button" type="radio" name="obedience" id="class-no" required aria-describedby="classno-error">
+            <input class="radio-button" type="radio" name="obedience" id="class-no" required aria-describedby="class-error">
             <label class="button-label push-1-2" for="class-no">No</label>
-            <p class="error-message milli island-1-4 push-0" id="obedience-error">
+            <p class="error-message milli island-1-4 push-0" id="class-error">
               <span>Select one</span>
             </p>
           </div>
-          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="move">Where will Your Dog Go if You Move?</label>
-            <input class="radio-button" type="radio" name="move" id="goif-yes" required aria-describedby="classyes-error">
-            <label class="button-label push-1-2" for="goif-yes">Yes</label>
-            <input class="radio-button" type="radio" name="move" id="goif-no" required aria-describedby="classno-error">
-            <label class="button-label push-1-2" for="goif-no">No</label>
-            <p class="error-message milli island-1-4 push-0" id="move-error">
-              <span>Select one</span>
+          <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="wherewill-ref">Where will Dog Go if You Move?</label>
+            <input type="text" id="wherewill-ref" required aria-describedby="wherewill-error">
+            <p class="error-message milli island-1-4 push-0" id="wherewill-error">
+              <span>Where will the dog go?</span>
             </p>
           </div>
         </div>
@@ -398,22 +395,22 @@
 
         <div class="wrapper grid pad-t-1-2 push">
           <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="brushing">Will the Dog be Brushed Often?</label>
-            <input class="radio-button" type="radio" name="brushing" id="brush-yes" required aria-describedby="classyes-error">
+            <h2 class="label exa push-1-2">Will the Dog be Brushed Often?</h2>
+            <input class="radio-button" type="radio" name="brushing" id="brush-yes" required aria-describedby="brushed-error">
             <label class="button-label push-1-2" for="brush-yes">Yes</label>
-            <input class="radio-button" type="radio" name="brushing" id="brushing-no" required aria-describedby="classno-error">
+            <input class="radio-button" type="radio" name="brushing" id="brushing-no" required aria-describedby="brushed-error">
             <label class="button-label push-1-2" for="brushing-no">No</label>
-            <p class="error-message milli island-1-4 push-0" id="obedience-error">
+            <p class="error-message milli island-1-4 push-0" id="brushed-error">
               <span>Select one</span>
             </p>
           </div>
           <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="allergy">Are Family Mambers Allergic?</label>
-            <input class="radio-button" type="radio" name="allergy" id="allergy-yes" required aria-describedby="classyes-error">
+            <h2 class="label exa push-1-2">Are Family Mambers Allergic?</h2>
+            <input class="radio-button" type="radio" name="allergy" id="allergy-yes" required aria-describedby="allergic-error">
             <label class="button-label push-1-2" for="allergy-yes">Yes</label>
-            <input class="radio-button" type="radio" name="allergy" id="allergy-no" required aria-describedby="classno-error">
+            <input class="radio-button" type="radio" name="allergy" id="allergy-no" required aria-describedby="allergic-error">
             <label class="button-label push-1-2" for="allergy-no">No</label>
-            <p class="error-message milli island-1-4 push-0" id="allergy-error">
+            <p class="error-message milli island-1-4 push-0" id="allergic-error">
               <span>Select one</span>
             </p>
           </div>
@@ -439,7 +436,7 @@
 
         <div class="wrapper grid pad-t-1-2 push">
           <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="homevisit">Will You Permit a Home Visit?</label>
+            <h2 class="label exa push-1-2">Will You Permit a Home Visit?</h2>
             <input class="radio-button" type="radio" name="homevisit" id="home-yes" required aria-describedby="homevisit-error">
             <label class="button-label push-1-2" for="home-yes">Yes</label>
             <input class="radio-button" type="radio" name="homevisit" id="home-no" required aria-describedby="homevisit-error">
@@ -449,7 +446,7 @@
             </p>
           </div>
           <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="vetcheck">Do You Authorize a Vet Check?</label>
+            <h2 class="label exa push-1-2">Do You Authorize a Vet Check?</h2>
             <input class="radio-button" type="radio" name="vetcheck" id="check-yes" required aria-describedby="vetcheck-error">
             <label class="button-label push-1-2" for="check-yes">Yes</label>
             <input class="radio-button" type="radio" name="vetcheck" id="check-no" required aria-describedby="vetcheck-error">
@@ -461,7 +458,7 @@
         </div>
 
         <div class="pad-t-1-2 wrapper sub">
-          <button class="btn" type="submit" href="#">SUBMIT</button>
+          <button class="btn" type="submit">SUBMIT</button>
         </div>
       </form>
     </div>
@@ -471,7 +468,7 @@
     <footer class="wrapper">
       <div class="all-btns text-center">
         <a class="facebook-btn push" href="https://www.facebook.com/NewBeginningsPetRescue">
-          <img class="icon i-32 facebook" src="../images/facebook.svg">
+          <img class="icon i-32 facebook" src="../images/facebook.svg" alt="facebook">
         </a>
         <a class="btn donate" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=a1efd36de0109&mfid=1491176546058_c781a76fe6100#/checkout/openButton">DONATE</a>
       </div>
@@ -481,9 +478,9 @@
     </footer>
   </section>
 
-    <script src="../common/js/jquery-3.2.0.min.js"></script>
-    <script src="../common/js/script.js"></script>
-    <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+  <script src="../common/js/jquery-3.2.0.min.js"></script>
+  <script src="../common/js/script.js"></script>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 
 </body>
 </html>

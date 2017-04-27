@@ -1,7 +1,6 @@
 .btn {
   background-color: var(--color-primary);
   border: 2px solid var(--color-orange);
-
   border-radius: 0;
   color: var(--color-orange);
   box-shadow: 0 0 2px #000;
@@ -39,7 +38,7 @@
 .btn-round {
   background-color: var(--color-primary);
   border: 2px solid var(--color-orange);
-  opacity: 0.5;
+  opacity: .5;
   border-radius: 20px;
   color: var(--color-orange);
   box-shadow: 0 0 2px #000;
@@ -47,8 +46,7 @@
 }
 
 .btn-round:hover {
-  transform: scale();
-  background-color: var(--color-orange),0.5;
+  background-color: var(--color-orange), .5;
   opacity: 1;
   color: black;
   border-color: var(--color-orange);

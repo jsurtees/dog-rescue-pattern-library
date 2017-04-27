@@ -1,7 +1,7 @@
 .footer {
   margin-top: 5em;
   padding: 1em 0;
-  border-top: 1px solid #3D3D3D;
+  border-top: 1px solid #3d3d3d;
   padding-bottom: 0;
 }
 
@@ -61,7 +61,6 @@
     width: 200px;
   }
 
-
 }
 
 @media only screen and (min-width: 90em) {
@@ -81,6 +80,5 @@
   .donate {
     width: 220px;
   }
-
 
 }

@@ -70,24 +70,28 @@
 
 .icon-hover-on {
   animation: iconslideup .5s ease-in-out;
-  animation-direction: forwards;
   animation-iteration-count: 0;
 }
 
 @keyframes iconslideup {
-  to {transform: scale(1);}
-  from {transform: scale(1.25) translateY(-10px);}
+
+  to { transform: scale(1); }
+
+  from { transform: scale(1.25) translateY(-10px); }
+
 }
 
 .icon-hover-off {
   animation: iconslidedown .5s ease-in-out;
-  animation-direction: forwards;
   animation-iteration-count: 0;
 }
 
 @keyframes iconslidedown {
-  to {transform: scale(1.25);}
-  from {transform: scale(1) translateY(0px);;}
+
+  to { transform: scale(1.25); }
+
+  from { transform: scale(1) translateY(0); }
+
 }
 
 @media only screen and (min-width: 35em) {
@@ -108,7 +112,7 @@
   .card-body-txt {
     margin: 0;
     color: black;
-    font-size: 0.7rem;
+    font-size: .7rem;
     line-height: 1.2rem;
   }
 
@@ -133,13 +137,6 @@
     font-size: .65rem;
   }
 
-  .card-body-txt {
-    margin: 0;
-    color: black;
-    font-size: .7rem;
-    line-height: 1.2rem;
-  }
-
 }
 
 @media only screen and (min-width: 90em) {
@@ -159,13 +156,6 @@
 
   .card-body-txt {
     font-size: .65rem;
-  }
-
-  .card-body-txt {
-    margin: 0;
-    color: black;
-    font-size: .7rem;
-    line-height: 1.2rem;
   }
 
 }
