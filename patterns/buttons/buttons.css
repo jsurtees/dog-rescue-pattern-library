@@ -26,9 +26,9 @@
 }
 
 .btn-card:hover {
-  border-top: 1px solid var(--color-red);
+  border-top: 1px solid var(--color-orange);
   background-color: var(--color-primary);
-  color: var(--color-red);
+  color: var(--color-orange);
 }
 
 .btn-text {

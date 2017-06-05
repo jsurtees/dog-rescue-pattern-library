@@ -24,12 +24,14 @@
 
     <div class="nav-bar fixed w-1 block">
       <div class="wrapper relative">
-        <h1 class="push-none">
-          <i class="icon i-128 logo">
-            <img class="nav-logo" src="../images/logo-886.svg" alt="broken">
-          </i>
-        </h1>
-        <div class="hamburger">
+        <a class="gutter logo-btn" href="home.html">
+          <h1 class="push-none">
+            <i class="icon i-128 logo">
+              <img class="nav-logo" src="../images/logo-886.svg" alt="broken">
+            </i>
+          </h1>
+        </a>
+        <div class="hamburger gutter-1-4">
           <label for="nav-check">
             <i class="icon i-32">
               <img class="nav-close" src="../images/hamburger.svg" alt="open nav">
@@ -88,7 +90,7 @@
                   <img class="img-flex" src="../images/contact-icon.svg" alt="">
                 </i>
               </div>
-              <a class="nav-btn-square" href="#">
+              <a class="nav-btn-square" href="contact.html">
                 <h2 class="nav-btn-txt yotta push-none">CONTACT</h2>
               </a>
             </div>
@@ -100,12 +102,12 @@
 
   <section class="push-2">
     <div class="section-title push-2 pad-t-2">
-      <div class="wrapper gutter-1-8">
+      <div class="wrapper gutter">
         <h2 class="push-1-2 pad-t title">Adoption Application</h2>
       </div>
     </div>
     <div class="grid disclaimer wrapper push">
-      <div class="unit xs-1 s-1 m-1-2 l-1-3">
+      <div class="unit xs-1 s-1 m-1-2 l-1-3 gutter">
         <p class="milli">The adoption fee is $400. Adopters will recieve a $50 refund after we recieve proof that he has graduated from a min of level one in obedience classes within 6 months of adoption. Expect to spend up to 20 minutes to fill in the form. Download this form at the bottom.</p>
       </div>
     </div>
@@ -116,7 +118,7 @@
             <span class="check">All sections must be filled. Or check format of highlighted answers.</span>
           </h3>
         </div>
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="date">Date</label>
             <input type="date" id="date" required aria-describedby="date-error">
@@ -141,7 +143,7 @@
             <textarea id="why-chosen" name="why-chosen"></textarea>
           </div>
         </div>
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="name">Name</label>
             <input type="text" id="name" placeholder="First Last" required aria-describedby="name-error">
@@ -164,7 +166,7 @@
             </p>
           </div>
         </div>
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
             <label class="label exa push-1-2" for="children">Children (# and Ages)</label>
             <textarea id="children" name="children"></textarea>
@@ -175,7 +177,7 @@
           </div>
         </div>
         <div class="grid disclaimer wrapper pad-t-2 push">
-          <div class="unit xs-1 s-1 m-1-2 l-1-3">
+          <div class="unit xs-1 s-1 m-1-2 l-1-3 gutter">
             <p class="milli">Please note that we have to abide by local bylaws and will not adopt out dogs to homes that may already be at the legal limit for their area.</p>
           </div>
         </div>
@@ -183,10 +185,10 @@
         <div class="rule push-2">
         </div>
 
-        <div class="wrapper">
+        <div class="wrapper gutter">
           <h2 class="sub-head">Reference (non-relative)</h2>
         </div>
-        <div class="wrapper grid push-2">
+        <div class="wrapper grid push-2 gutter">
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="name-ref">Name</label>
             <input type="text" id="name-ref" placeholder="First Last" required aria-describedby="name2-error">
@@ -206,10 +208,10 @@
         <div class="rule">
         </div>
 
-        <div class="wrapper pad-t-2">
+        <div class="wrapper pad-t-2 gutter">
           <h2 class="sub-head">Home Environment</h2>
         </div>
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="own">Ownership</label>
             <input class="radio-button" type="radio" name="ownership" id="own" required aria-describedby="ownership-error">
@@ -242,7 +244,7 @@
           </div>
         </div>
 
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="fence">Fence Type</label>
             <input type="text" id="fence" required aria-describedby="fencetype-error">
@@ -269,7 +271,7 @@
           </div>
         </div>
 
-        <div class="wrapper grid pad-t-1-2">
+        <div class="wrapper grid pad-t-1-2 gutter">
           <div class="left-alone-wide push unit xs-1 s-1 m-1-2 l-1-3">
             <h2 class="label exa push-1-2">How Many Hours a Day Will Your Dog be Alone?</h2>
             <input class="radio-button" type="radio" name="hours" id="0-5" required aria-describedby="alone-error">
@@ -286,7 +288,7 @@
           </div>
         </div>
 
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
             <label class="label exa push-1-2" for="alone-pet">Where Will Your Dog be Kept When Alone?</label>
             <textarea id="alone-pet" name="alone-pet"></textarea>
@@ -297,7 +299,7 @@
           </div>
         </div>
 
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
             <label class="label exa push-1-2" for="exercise">How Will you Exercise Your Dog?</label>
             <textarea id="exercise" name="exercise"></textarea>
@@ -308,7 +310,7 @@
           </div>
         </div>
 
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
             <label class="label exa push-1-2" for="playtime">How Much Dog Playtime per Day?</label>
             <textarea id="playtime" name="playtime"></textarea>
@@ -319,8 +321,15 @@
           </div>
         </div>
 
-        <div class="wrapper grid pad-t-1-2 push">
-          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="wrapper grid pad-t-1-2 push gutter">
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
+            <label class="label exa push-1-2" for="wherewill-ref">Where will Dog Go if You Move?</label>
+            <input type="text" id="wherewill-ref" required aria-describedby="wherewill-error">
+            <p class="error-message milli island-1-4 push-0" id="wherewill-error">
+              <span>Where will the dog go?</span>
+            </p>
+          </div>
+          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-2">
             <h2 class="label exa push-1-2">Will You Bring Your Dog to Obedience Class?</h2>
             <input class="radio-button" type="radio" name="obedience" id="class-yes" required aria-describedby="class-error">
             <label class="button-label push-1-2" for="class-yes">Yes</label>
@@ -330,23 +339,16 @@
               <span>Select one</span>
             </p>
           </div>
-          <div class="right push unit xs-1 s-1 m-1-2 l-1-3">
-            <label class="label exa push-1-2" for="wherewill-ref">Where will Dog Go if You Move?</label>
-            <input type="text" id="wherewill-ref" required aria-describedby="wherewill-error">
-            <p class="error-message milli island-1-4 push-0" id="wherewill-error">
-              <span>Where will the dog go?</span>
-            </p>
-          </div>
         </div>
 
         <div class="rule">
         </div>
 
-        <div class="wrapper pad-t-2">
+        <div class="wrapper pad-t-2 gutter">
           <h2 class="sub-head">Finding the Perfect Match</h2>
         </div>
 
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="why-dog">Why Do you Want a Dog?</label>
             <select id="why-dog" name="why-dog">
@@ -374,7 +376,7 @@
           </div>
         </div>
 
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <label class="label exa push-1-2" for="sleep">Where will Your Dog Sleep?</label>
             <input type="text" id="sleep" required aria-describedby="sleep-error">
@@ -393,8 +395,8 @@
           </div>
         </div>
 
-        <div class="wrapper grid pad-t-1-2 push">
-          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="wrapper grid pad-t-1-2 push gutter">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <h2 class="label exa push-1-2">Will the Dog be Brushed Often?</h2>
             <input class="radio-button" type="radio" name="brushing" id="brush-yes" required aria-describedby="brushed-error">
             <label class="button-label push-1-2" for="brush-yes">Yes</label>
@@ -404,7 +406,7 @@
               <span>Select one</span>
             </p>
           </div>
-          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
+          <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
             <h2 class="label exa push-1-2">Are Family Mambers Allergic?</h2>
             <input class="radio-button" type="radio" name="allergy" id="allergy-yes" required aria-describedby="allergic-error">
             <label class="button-label push-1-2" for="allergy-yes">Yes</label>
@@ -419,11 +421,11 @@
         <div class="rule">
         </div>
 
-        <div class="wrapper pad-t-2">
+        <div class="wrapper pad-t-2 gutter">
           <h2 class="sub-head">Pet History</h2>
         </div>
 
-        <div class="wrapper grid">
+        <div class="wrapper grid gutter">
           <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-2">
             <label class="label exa push-1-2" for="previously">Pets Previously Owned</label>
             <textarea id="previously" name="previously"></textarea>
@@ -434,8 +436,8 @@
           </div>
         </div>
 
-        <div class="wrapper grid pad-t-1-2 push">
-          <div class="right-alone push unit xs-1 s-1 m-1-2 l-1-3">
+        <div class="wrapper grid pad-t-1-2 push gutter">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
             <h2 class="label exa push-1-2">Will You Permit a Home Visit?</h2>
             <input class="radio-button" type="radio" name="homevisit" id="home-yes" required aria-describedby="homevisit-error">
             <label class="button-label push-1-2" for="home-yes">Yes</label>
@@ -445,7 +447,7 @@
               <span>Select one</span>
             </p>
           </div>
-          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
+          <div class="middle push unit xs-1 s-1 m-1-2 l-1-3">
             <h2 class="label exa push-1-2">Do You Authorize a Vet Check?</h2>
             <input class="radio-button" type="radio" name="vetcheck" id="check-yes" required aria-describedby="vetcheck-error">
             <label class="button-label push-1-2" for="check-yes">Yes</label>
@@ -456,24 +458,27 @@
             </p>
           </div>
         </div>
-
-        <div class="pad-t-1-2 wrapper sub">
-          <button class="btn" type="submit">SUBMIT</button>
+        <div class="pad-t-1-2 wrapper sub gutter">
+          <a class="gutter">
+            <button class="btn" type="submit">SUBMIT</button>
+          </a>
         </div>
       </form>
     </div>
   </section>
 
-  <section class="footer padding-top push">
-    <footer class="wrapper">
-      <div class="all-btns text-center">
+  <section class="footer pad-b">
+    <footer class="grid wrapper gutter">
+      <div class="unit xs-1 s-1 m-1-3 l-1-3 donate pad-t-2">
+        <a class="btn text-center donation" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=a1efd36de0109&mfid=1491176546058_c781a76fe6100#/checkout/openButton">DONATE</a>
+      </div>
+      <div class="unit xs-1 s-1 m-1-3 l-1-3 fb text-center pad-t-2">
         <a class="facebook-btn push" href="https://www.facebook.com/NewBeginningsPetRescue">
           <img class="icon i-32 facebook" src="../images/facebook.svg" alt="facebook">
         </a>
-        <a class="btn donate" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=a1efd36de0109&mfid=1491176546058_c781a76fe6100#/checkout/openButton">DONATE</a>
       </div>
-      <div class="text-right copyright">
-        <small class="">© New Beginnings 2017</small>
+      <div class="unit xs-1 s-1 m-1-3 l-1-3 copyright ">
+        <p class="copy">© New Beginnings 2017</p>
       </div>
     </footer>
   </section>

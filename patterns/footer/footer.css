@@ -1,84 +1,55 @@
 .footer {
-  margin-top: 5em;
-  padding: 1em 0;
-  border-top: 1px solid #3d3d3d;
-  padding-bottom: 0;
+  border-top: 1px solid #353637;
+}
+
+.copy {
+  color: var(--color-orange);
+  text-align: center;
+  padding-top: 1em;
 }
 
 .donate {
-  width: 125px;
+  text-align: center;
 }
 
-.facebook {
-  margin-right: 2em;
+.donation {
+  width: 10em;
 }
 
-.copyright {
-  text-align: right;
-  width: 65%;
-  margin: 0;
-  display: inline-block;
+.fb {
+  text-align: center;
 }
 
-.all-btns {
-  margin-left: .5em;
-  display: inline-block;
-  width: 30%;
-}
+@media only screen and (min-width: 40em) {
 
-@media only screen and (min-width: 35em) {
-
-  .copyright {
-    text-align: right;
-    width: 68%;
-    margin: 0;
-    display: inline-block;
+  .donate {
+    text-align: left;
   }
 
-  .all-btns {
-    display: inline-block;
-    width: 30%;
-    margin-left: 0;
+  .fb {
+    text-align: center;
+  }
+
+  .copy {
+    text-align: right;
+    padding-top: 3.3em;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
-  .copyright {
-    text-align: right;
-    width: 69.5%;
-    margin: 0;
-    display: inline-block;
-  }
-
-  .all-btns {
-    display: inline-block;
-    width: 30%;
-  }
-
   .donate {
-    width: 200px;
+    text-align: left;
   }
 
-}
+  .fb {
+    text-align: center;
+  }
 
-@media only screen and (min-width: 90em) {
-
-  .copyright {
+  .copy {
     text-align: right;
-    width: 69.5%;
-    margin: 0;
-    display: inline-block;
-  }
-
-  .all-btns {
-    display: inline-block;
-    width: 30%;
-  }
-
-  .donate {
-    width: 220px;
+    padding-top: 3.3em;
   }
 
 }

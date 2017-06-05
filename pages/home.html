@@ -23,12 +23,14 @@
     <input type="checkbox" class="nav-check" id="nav-check">
     <div class="nav-bar fixed w-1 block">
       <div class="wrapper relative">
-        <h1 class="push-none">
-          <i class="icon i-128 logo">
-            <img class="nav-logo" src="../images/logo-886.svg" alt="broken">
-          </i>
-        </h1>
-        <div class="hamburger">
+        <a class="gutter" href="home.html">
+          <h1 class="push-none">
+            <i class="icon i-128 logo">
+              <img class="nav-logo" src="../images/logo-886.svg" alt="broken">
+            </i>
+          </h1>
+        </a>
+        <div class="hamburger gutter-1-4">
           <label for="nav-check">
             <i class="icon i-32">
               <img class="nav-close" src="../images/hamburger.svg" alt="open nav">
@@ -86,7 +88,7 @@
                   <img class="img-flex" src="../images/contact-icon.svg" alt="">
                 </i>
               </div>
-              <a class="nav-btn-square" href="#">
+              <a class="nav-btn-square" href="contact.html">
                 <h2 class="nav-btn-txt yotta push-none">CONTACT</h2>
               </a>
             </div>
@@ -101,16 +103,16 @@
         <img src="../images/logo-886.svg" alt="logo">
       </i>
       <p class="subhead inline-block">WE ARE YOUR DOG RESCUE ORGANIZATION <br> LOCATED IN OTTAWA, ONTARIO.</p>
-      <div class="up-arrow inline-block">
+      <a class="up-arrow inline-block" href="#secondary-nav">
         <i class="icon i-64">
           <img src="../images/up-arrow.svg" alt="logo">
         </i>
-      </div>
+      </a>
     </div>
     <div class="content">
     </div>
   </section>
-  <section class="grid simple-nav wrapper">
+  <section class="grid simple-nav wrapper" id="secondary-nav">
     <div class="1 unit xs-1 s-1 m-1-2 l-1-4 text-center pad-t-1-2">
       <a class="btn" href="home.html">HOME</a>
     </div>
@@ -121,13 +123,13 @@
       <a class="btn" href="forms.html">FORMS</a>
     </div>
     <div class="4 unit xs-1 s-1 m-1-2 l-1-4 text-center pad-t-1-2">
-      <a class="btn" href="#">CONTACT</a>
+      <a class="btn" href="contact.html">CONTACT</a>
     </div>
   </section>
-  <section class="articles-linksp push-2">
+  <section class="articles-links push-2">
     <div class="section-title push-2 pad-t-2">
       <div class="wrapper gutter">
-        <h2 class="push-1-2 pad-t">Important Articles and Links</h2>
+        <h2 class="push-1-2 pad-t links-title">Important Articles and Links</h2>
       </div>
     </div>
     <div class="all-cards wrapper">
@@ -213,16 +215,18 @@
       </div>
     </div>
   </section>
-  <section class="footer padding-top push">
-    <footer class="wrapper">
-      <div class="all-btns text-center">
+  <section class="footer pad-b">
+    <footer class="grid wrapper gutter">
+      <div class="unit xs-1 s-1 m-1-3 l-1-3 donate pad-t-2">
+        <a class="btn text-center" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=a1efd36de0109&mfid=1491176546058_c781a76fe6100#/checkout/openButton">DONATE</a>
+      </div>
+      <div class="unit xs-1 s-1 m-1-3 l-1-3 fb text-center pad-t-2">
         <a class="facebook-btn push" href="https://www.facebook.com/NewBeginningsPetRescue">
           <img class="icon i-32 facebook" src="../images/facebook.svg" alt="facebook">
         </a>
-        <a class="btn donate" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=a1efd36de0109&mfid=1491176546058_c781a76fe6100#/checkout/openButton">DONATE</a>
       </div>
-      <div class="text-right copyright">
-        <small class="">© New Beginnings 2017</small>
+      <div class="unit xs-1 s-1 m-1-3 l-1-3 copyright ">
+        <p class="copy">© New Beginnings 2017</p>
       </div>
     </footer>
   </section>

@@ -9,7 +9,7 @@
 
 .card-img {
   border-radius: 3px 3px 0 0;
-  border-bottom: var(--color-red) solid 2px;
+  border-bottom: var(--color-orange) solid 2px;
 }
 
 .card-body {
@@ -31,9 +31,10 @@
 }
 
 .card:hover .btn-card {
-  border-top: 1px solid var(--color-red);
+  border-top: 1px solid var(--color-orange);
   background-color: var(--color-primary);
-  color: var(--color-red);
+  color: var(--color-orange);
+  border-radius: 0;
 }
 
 .nav-btn {

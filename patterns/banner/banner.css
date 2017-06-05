@@ -117,7 +117,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-    transform: translateY(60px);
+    transform: translateY(70px);
   }
 
 }
