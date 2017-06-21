@@ -1,5 +1,5 @@
 .section-title {
-  padding-top: 6em;
+  padding-top: 5em;
   border-bottom: 2px solid var(--color-orange);
 }
 
@@ -10,4 +10,71 @@
 
 .animals-title {
   color: var(--color-orange);
+}
+
+.dog-pic {
+  border: 2px solid var(--color-orange);
+}
+
+.portrait {
+  max-width: 100%;
+  min-width: 200px;
+}
+
+.btn {
+  width: 200px;
+}
+
+.bio {
+  padding-bottom: 1em;
+}
+
+.right-bio {
+  padding-top: 3em;
+}
+
+.title {
+  padding-left: 0;
+}
+
+
+@media only screen and (min-width: 38em) {
+
+  .right-bio {
+    padding-top: 0;
+    padding-left: 2em;
+  }
+
+  .bio {
+    padding-bottom: 3em;
+  }
+
+  .title {
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .right-bio {
+    padding-left: 3em;
+  }
+
+  .bio {
+    padding-bottom: 4em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .right-bio {
+    padding-left: 3em;
+  }
+
+  .bio {
+    padding-bottom: 4em;
+  }
+
 }

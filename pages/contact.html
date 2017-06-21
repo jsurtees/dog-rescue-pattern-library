@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title>Contact Us</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="../common/modules.css">
   <link rel="stylesheet" href="../common/grid.css">
@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="../patterns/nav/nav.css">
   <link rel="stylesheet" href="../patterns/buttons/buttons.css">
   <link rel="stylesheet" href="../patterns/footer/footer.css">
+  <link rel="stylesheet" href="../patterns/homescreen-nav/homescreen-nav.css">
+  <link rel="stylesheet" href="../patterns/forms/all-types.css">
   <link rel="stylesheet" href="../patterns/contact-form/contact-form.css">
 </head>
 <body>
@@ -28,7 +30,7 @@
             </i>
           </h1>
         </a>
-        <div class="hamburger">
+        <div class="hamburger gutter-1-4">
           <label for="nav-check">
             <i class="icon i-32">
               <img class="nav-close" src="../images/hamburger.svg" alt="open nav">
@@ -38,91 +40,155 @@
         </div>
       </div>
     </div>
-    <section class="nav">
-      <input type="checkbox" class="nav-check" id="nav-check">
-      <div class="nav-bar fixed w-1 block">
-        <div class="wrapper relative">
-          <h1 class="push-none">
-            <i class="icon i-128 logo">
-              <img class="nav-logo" src="../images/logo-886.svg" alt="broken">
-            </i>
-          </h1>
-          <div class="hamburger">
-            <label for="nav-check">
-              <i class="icon i-32">
-                <img class="nav-close" src="../images/hamburger.svg" alt="open nav">
-                <img class="nav-open" src="../images/no-hamburger.svg" alt="close nav">
-              </i>
-            </label>
+    <nav class="primary-nav fixed w-1">
+      <div class="wrapper">
+        <ul class="grid nav">
+          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+            <div class="sqaure">
+              <div class="nav-btn home">
+                <div class="icon-holder block">
+                  <i class="icon i-64 push-half">
+                    <img class="img-flex" src="../images/home-icon.svg" alt="">
+                  </i>
+                </div>
+                <a class="nav-btn-square" href="home.html">
+                  <h2 class="nav-btn-txt yotta push-none">HOME</h2>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+            <div class="nav-btn adoptable">
+              <div class="icon-holder block">
+                <i class="icon i-64 push-half">
+                  <img class="img-flex" src="../images/dog-icon.svg" alt="">
+                </i>
+              </div>
+              <a class="nav-btn-square" href="adoptable.html">
+                <h2 class="nav-btn-txt yotta push-none">ADOPTABLE</h2>
+              </a>
+            </div>
+          </li>
+          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+            <div class="nav-btn forms">
+              <div class="icon-holder block">
+                <i class="icon i-64 push-half">
+                  <img class="img-flex" src="../images/form-icon.svg" alt="">
+                </i>
+              </div>
+              <a class="nav-btn-square" href="forms.html">
+                <h2 class="nav-btn-txt yotta push-none">FORMS</h2>
+              </a>
+            </div>
+          </li>
+          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+            <div class="nav-btn contact">
+              <div class="icon-holder block">
+                <i class="icon i-64 push-half">
+                  <img class="img-flex" src="../images/contact-icon.svg" alt="">
+                </i>
+              </div>
+              <a class="nav-btn-square" href="contact.html">
+                <h2 class="nav-btn-txt yotta push-none">CONTACT</h2>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section class="grid wrapper contact-nav" id="secondary-nav">
+    <div class="btn-1 unit xs-1 s-1 m-1 l-1-3 gutter pad-t-1-2">
+      <a class="btn text-center" href="#contact">CONTACT US</a>
+    </div>
+    <div class="btn-2 unit xs-1 s-1 m-1 l-1-3 text-center pad-t-1-2">
+      <a class="btn" href="#foster">FOSTER 4 US</a>
+    </div>
+    <div class="btn-3 unit xs-1 s-1 m-1 l-1-3 text-right gutter pad-t-1-2">
+      <a class="btn text-center" href="#info">INFORMATION</a>
+    </div>
+  </section>
+
+  <section class="contact-form" id="contact">
+    <div class="section-title contact-title push-2 pad-t-2">
+      <div class="wrapper gutter">
+        <h2 class="push-1-2 contact">Contact Us</h2>
+      </div>
+    </div>
+    <div class="form">
+      <form method="post" novalidate>
+        <div class="error-message error-meesage-highlighted push-2 wrapper gutter" role="alert" aria-live="assertive">
+          <h3 class="push-0 error-top pad-top-half pad-bottom-half">
+            <span class="check gutter-1-2">All sections must be filled. Or check format of highlighted answers.</span>
+          </h3>
+        </div>
+        <div class="wrapper grid gutter">
+          <div class="left push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="name">Name</label>
+            <input type="text" id="name" placeholder="First Last" required aria-describedby="name-error">
+            <p class="error-message milli island-1-4 push-0" id="name-error">
+              <span>Enter your first and last name</span>
+            </p>
           </div>
         </div>
-      </div>
-      <nav class="primary-nav fixed w-1">
-        <div class="wrapper">
-          <ul class="grid nav">
-            <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
-              <div class="sqaure">
-                <div class="nav-btn home">
-                  <div class="icon-holder block">
-                    <i class="icon i-64 push-half">
-                      <img class="img-flex" src="../images/home-icon.svg" alt="">
-                    </i>
-                  </div>
-                  <a class="nav-btn-square" href="home.html">
-                    <h2 class="nav-btn-txt yotta push-none">HOME</h2>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
-              <div class="nav-btn adoptable">
-                <div class="icon-holder block">
-                  <i class="icon i-64 push-half">
-                    <img class="img-flex" src="../images/dog-icon.svg" alt="">
-                  </i>
-                </div>
-                <a class="nav-btn-square" href="adoptable.html">
-                  <h2 class="nav-btn-txt yotta push-none">ADOPTABLE</h2>
-                </a>
-              </div>
-            </li>
-            <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
-              <div class="nav-btn forms">
-                <div class="icon-holder block">
-                  <i class="icon i-64 push-half">
-                    <img class="img-flex" src="../images/form-icon.svg" alt="">
-                  </i>
-                </div>
-                <a class="nav-btn-square" href="forms.html">
-                  <h2 class="nav-btn-txt yotta push-none">FORMS</h2>
-                </a>
-              </div>
-            </li>
-            <li class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
-              <div class="nav-btn contact">
-                <div class="icon-holder block">
-                  <i class="icon i-64 push-half">
-                    <img class="img-flex" src="../images/contact-icon.svg" alt="">
-                  </i>
-                </div>
-                <a class="nav-btn-square" href="contact.html">
-                  <h2 class="nav-btn-txt yotta push-none">CONTACT</h2>
-                </a>
-              </div>
-            </li>
-          </ul>
+        <div class="wrapper grid gutter">
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1-3">
+            <label class="label exa push-1-2" for="email">Email</label>
+            <input type="text" id="email" placeholder="Email Address" required aria-describedby="email-error">
+            <p class="error-message milli island-1-4 push-0" id="email-error">
+              <span>Enter your email address</span>
+            </p>
+          </div>
         </div>
-      </nav>
-    </section>
+        <div class="wrapper grid gutter">
+          <div class="left-alone push unit xs-1 s-1 m-1-2 l-1">
+            <label class="label exa push-1-2" for="question">Question</label>
+            <textarea id="question" name="question"></textarea>
+          </div>
+        </div>
+        <div class="pad-t wrapper sub gutter">
+          <a class="gutter">
+            <button class="btn gutter-2" type="submit">SUBMIT</button>
+          </a>
+        </div>
+      </form>
+    </div>
+  </section>
 
-  <section class="contact-form">
-    <div class="section-title push-2 pad-t-2">
+  <section class="foster-app" id="foster">
+    <div class="section-title-half section-title push-2 pad-t-2">
       <div class="wrapper gutter">
-        <h2 class="push-1-2 pad-t contact">Contact Us</h2>
+        <h2 class="push-1-2 pad-t contact">Become a Foster Home</h2>
+      </div>
+    </div>
+    <div class="grid disclaimer wrapper push">
+      <div class="unit xs-1 s-1 m-1-2 l-1-3 gutter">
+        <p class="milli">We cannot do the things we do with out volunteers. If you think you want to help please complete our application and email it back to us at dogs2rescue@mail.com</p>
+      </div>
+      <div class="pad-t wrapper download-f text-left">
+        <a class="gutter" href="../links/foster_app.doc">
+          <button class="btn text-center">DOWNLOAD FORM</button>
+        </a>
       </div>
     </div>
 
-  </section>
+  <section class="contact-form" id="info">
+    <div class="section-title-half section-title push-2 pad-t-2">
+      <div class="wrapper gutter">
+        <h2 class="push-1-2 pad-t-1-2 contact">Info</h2>
+      </div>
+    </div>
+    <div class="grid disclaimer wrapper push">
+      <div class="unit xs-1 s-1 m-1-2 l-1-3 gutter">
+        <p class="milli">New Beginnings cannot continue its mission of rescuing animals without the help of many generous people. How can you help? New Beginnings survives on donations. If you would like to help a dog during its stay with us or if you have food or equipment/money you would like to donate then please fill the form above, donate at the bottom or email us.</p>
+      </div>
+    </div>
+    <div class="grid wrapper gutter push-2">
+      <div class="unit xs-1 s-1 m-1-6 l-1-6">
+        <h3 class="info">dogs2rescue@mail.com<br>1-401 Tillbury Ave.<br>Ottawa, ON<br>K2A 0Y3
+      </div>
+    </div>
 
   <section class="footer pad-b">
     <footer class="grid wrapper gutter">
@@ -142,6 +208,7 @@
 
   <script src="../common/js/jquery-3.2.0.min.js"></script>
   <script src="../common/js/script.js"></script>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 
 </body>
 </html>

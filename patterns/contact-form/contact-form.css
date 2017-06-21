@@ -6,3 +6,65 @@
   padding-top: 6em;
   border-bottom: 2px solid var(--color-orange);
 }
+
+.section-title-half {
+  padding-top: 3.5em;
+}
+
+.error-meesage-highlighted {
+  border: none;
+}
+
+.info {
+  color: var(--color-orange);
+}
+
+.map {
+  box-shadow: 0 0 6px #222;
+  height: 300px;
+}
+
+.btn-1 {
+  text-align: center;
+}
+
+.btn-2 {
+  text-align: center;
+}
+
+.btn-3 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .btn-1 {
+    text-align: left;
+  }
+
+  .btn-2 {
+    text-align: center;
+  }
+
+  .btn-3 {
+    text-align: right;
+  }
+
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .btn-1 {
+    text-align: left;
+  }
+
+  .btn-2 {
+    text-align: center;
+  }
+
+  .btn-3 {
+    text-align: right;
+  }
+
+}

@@ -6,7 +6,7 @@ $('.nav-close').click(function() {
   $('.nav-close').hide();
   $('.nav-open').show();
   $('.primary-nav').fadeIn(500);
-  $('body, html').css('overflow-y', 'hidden');
+  $('body, html').css('overflow-x', 'hidden');
 });
 
 $('.nav-open').click(function() {

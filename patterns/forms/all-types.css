@@ -70,44 +70,52 @@ input[type="radio"] + label::before {
 }
 
 .title, .disclaimer {
-  padding-left: .5em;
+  padding-left: 0;
   padding-right: 2em;
 }
 
 .left {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
 }
 
 .middle {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
 }
 
 .right {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
 }
 
 .left-alone {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
 }
 
 .left-alone-wide {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0;
+  margin-right: 0;
   width: 100%;
 }
 
 .right-alone {
   width: 100%;
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.disclaimer {
+  padding-left: 0;
+}
+
+.title {
+  padding-left: 0;
 }
 
 .rule {
@@ -120,53 +128,70 @@ input[type="radio"] + label::before {
 }
 
 .sub {
-  padding-left: .5em;
+  padding-left: 0;
+}
+
+.error-meesage-highlighted {
+  border: none;
+}
+
+.contact-nav {
+  padding-top: 6em;
+  padding-bottom: 0;
 }
 
 @media only screen and (min-width: 35em) {
 
   .left {
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
   }
 
   .middle {
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
   }
 
   .right {
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
   }
 
   .left-alone {
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
   }
 
   .left-alone-wide {
-    margin-left: .5em;
-    margin-right: .5em;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
   }
 
   .right-alone {
     width: 100%;
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .sub-head {
-    padding-left: .5em;
+    padding-left: 0;
   }
 
   .sub {
-    padding-left: .5em;
+    padding-left: 0;
+  }
+
+  .disclaimer {
+    padding-left: 0;
+  }
+
+  .title {
+    padding-left: 0;
   }
 
 }
@@ -198,6 +223,7 @@ input[type="radio"] + label::before {
 
   .left-alone {
     margin-left: 0;
+    margin-right: .5em;
     width: 48.5%;
     padding-right: .5em;
   }
@@ -248,11 +274,13 @@ input[type="radio"] + label::before {
 
   .left-alone {
     width: 48.5%;
+    margin-right: .5em;
     padding-right: .5em;
   }
 
   .left-alone-wide {
     width: 60%;
+    margin-right: .5em;
     padding-right: .5em;
   }
 

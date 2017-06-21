@@ -15,7 +15,7 @@
 .card-body {
   background-color: #fff;
   margin: 0;
-  height: 11rem;
+  height: 12rem;
 }
 
 .card-body-txt {
@@ -35,6 +35,17 @@
   background-color: var(--color-primary);
   color: var(--color-orange);
   border-radius: 0;
+}
+
+.card-inner-event {
+  max-height: 300px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.card-button-event {
+  z-index: 1005;
+  box-shadow: 0 0 6px #222;
 }
 
 .nav-btn {
@@ -92,6 +103,14 @@
   to { transform: scale(1.25); }
 
   from { transform: scale(1) translateY(0); }
+
+}
+
+@media only screen and (min-width: 400px) {
+
+  .card-body {
+    height: 14rem;
+  }
 
 }
 
